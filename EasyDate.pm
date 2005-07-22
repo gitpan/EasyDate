@@ -191,32 +191,32 @@ sub seconds {
 
 =head1 NAME
 
-SimpleDate - A Simple Interface For Date Objects;
+easyDate - A easy Interface For Date Objects;
 
 =head1 SYNOPSIS
 
-	use SimpleDate;
+	use easyDate;
 	
-	my $obj = new SimpleDate(21,07,2005);
-	my $newObj = new SimpleDate;
+	my $obj = new easyDate(21,07,2005);
+	my $newObj = new easyDate;
 
 
 	$newObj->setDate(1,1,2005);
 	$newObj->day(15);
 	$newObj->mon(12);
 
-	$result = &SimpleDate::compare($obj,$newObj);
+	$result = &easyDate::compare($obj,$newObj);
 	
 	unless ($result) { print "Objects are equal!"; }
 
-	$newObj = &SimpleDate::get_tDate;
+	$newObj = &easyDate::get_tDate;
 
 	$newObj->print;	
 
 
 =head1 DESCRIPTION
 
-This module provides a fairly simple interface for creating and
+This module provides a fairly easy interface for creating and
 using date objects. 
 
 =head2 Methods
@@ -226,7 +226,7 @@ using date objects.
 
 =item C<new>
 
-Returns a new SimpleDate object. It can 
+Returns a new easyDate object. It can 
 takes three arguments: The day, the month and the year.
 
 check readme for more information.
