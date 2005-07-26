@@ -183,10 +183,10 @@ sub compare {
 # --------------------------------------------------------------------------
 sub seconds {
 	my $self = shift;
-#	my $yeardays = ($self->year % 4) ? 365 : 366;
+	my $yeardays = ($self->year % 4) ? 365 : 366;
 	return ($self->day*24*60*60)+
 	 ($self->mon*&mydate::get_daysnum($self->mon, $self->year)*24*60*60)+
-	  ($self->year*365*24*60*60);
+	  ($self->year*$yeardays*24*60*60);
 }
 
 =head1 NAME
